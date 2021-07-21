@@ -5,9 +5,9 @@ Content:
 
 - figure 2 (Use cases demonstrating ML model training, benchmarking and platform extension):
 
-    - 2B: raw data: performance comparison of the method proposed by Emerson et al. 2017 across dataset sizes
-    - 2C: raw data: CMV-associated TCRB sequences across datasets
-    - 2E: raw data: performance comparison of newly added ML method (CNN) with logistic regression and TCRdist-based classifier for predicting paired chain receptor specificity for Influenza A (epitope GILGFVFTL)
+    - 2B: raw data and code: performance comparison of the method proposed by Emerson et al. 2017 across dataset sizes
+    - 2C: raw data and code: CMV-associated TCRB sequences across datasets
+    - 2E: raw data and code: performance comparison of newly added ML method (CNN) with logistic regression and TCRdist-based classifier for predicting paired chain receptor specificity for Influenza A (epitope GILGFVFTL) (see the code and data for supplementary figure 5)
     - 2F: raw data: discovered motifs by logistic regression, CNN, TCRdist and GLIPH2
     - 2H: raw data: performance across simulated datasets with immune events of increasing complexity
     - 2I: raw data: assessment of motifs recovered by ML models
