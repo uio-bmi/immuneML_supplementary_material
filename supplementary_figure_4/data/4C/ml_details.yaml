@@ -1,0 +1,24 @@
+CMV:
+  N_0: 304.0
+  N_1: 259.0
+  alpha_0: 4.204556148387505
+  alpha_1: 6.794279975656695
+  beta_0: 148472.16899315198
+  beta_1: 35329.85448668557
+  class_mapping:
+    0: false
+    1: true
+  classes:
+  - false
+  - true
+  feature_names:
+  - relevant_sequence_abundance
+  - total_sequence_abundance
+  label_name: CMV
+  likelihood_threshold: -1.0e-10
+  max_iterations: 50000.0
+  ml_details_path: null
+  name: ml
+  predictions_path: {}
+  result_path: study_replication_10_fold_CV/cmv_study_replication/split_1/CMV_enc001_ml_optimal//ml_method/
+  update_rate: 0.01
