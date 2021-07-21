@@ -3,7 +3,11 @@ from sklearn.metrics import roc_curve, roc_auc_score
 import plotly.express as px
 import plotly.graph_objects as go
 
+# constants:
+PLOTLY_BLACK = "#2A3F5E"
 
+
+# util functions:
 def make_roc_curve(predictions_path: str, label_name, proba_name):
     df = pd.read_csv(predictions_path)
     fpr, tpr, _ = roc_curve(y_true=df[label_name].values, y_score=df[proba_name].values)
@@ -14,11 +18,11 @@ def make_roc_curve(predictions_path: str, label_name, proba_name):
     }
 
 
-def draw_rocs(data: list, labels: list, result_path: str, figure_name: str = "figure2B.html", legend_title: str = ""):
+def draw_rocs(data: list, labels: list, result_path: str, figure_name: str = "figure.html", legend_title: str = ""):
     figure = go.Figure()
     colors = px.colors.sequential.Viridis[::2][::-1]
 
-    figure.add_trace(go.Scatter(x=[0, 1], y=[0, 1], mode='lines', name='baseline (AUROC = 0.50)', line=dict(color=Constants.PLOTLY_BLACK, dash='dash'),
+    figure.add_trace(go.Scatter(x=[0, 1], y=[0, 1], mode='lines', name='baseline (AUROC = 0.50)', line=dict(color=PLOTLY_BLACK, dash='dash'),
                                 hoverinfo="skip"))
 
     for index, item in enumerate(data):
