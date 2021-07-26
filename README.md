@@ -25,7 +25,7 @@ Content:
     
 - supplementary figure 6 (The benchmarking use case model coefficients and motif recovery, where the repertoire data is represented by 3-mer amino acid frequencies):
 
-    - 6A, 6B, 6C, and 6D: raw data as provided by immuneML as a part of the corresponding report output.
+    - 6A, 6B, 6C, and 6D: raw data and HTML files as provided by immuneML as a part of the corresponding report output.
 
 All plots with code provided as a part of this repository can now be obtained directly from immuneML through corresponding reports.
 
